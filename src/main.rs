@@ -1,10 +1,14 @@
+use array::container_with_most_water::max_area;
 use helpers::select_random::select_random_problem;
-use strings::valid_anagram::is_anagram;
 
 mod strings;
+mod heap;
+mod array;
 mod helpers;
 
 fn main() {
-    is_anagram("racecar".to_string(), "raccare".to_string());
     select_random_problem();
+    let heights: Vec<i32> = vec![2,3,5,6,2,3];
+        max_area(heights);
 }
+
