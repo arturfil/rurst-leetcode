@@ -1,5 +1,5 @@
-use array::container_with_most_water::max_area;
-use helpers::select_random::select_random_problem;
+use array::{max_product_subarray::max_product, max_subarray::max_sub_array};
+
 
 mod strings;
 mod heap;
@@ -7,8 +7,8 @@ mod array;
 mod helpers;
 
 fn main() {
-    select_random_problem();
-    let heights: Vec<i32> = vec![2,3,5,6,2,3];
-        max_area(heights);
+    // select_random_problem();
+    let nums = vec![-2,1,-3,4,-1,2,1,-5,4];
+        max_sub_array(nums);
 }
 
