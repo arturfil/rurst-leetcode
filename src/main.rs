@@ -1,4 +1,6 @@
 use array::{max_product_subarray::max_product, max_subarray::max_sub_array};
+use helpers::select_random::select_random_problem;
+use strings::first_unique_char::first_uniq_char;
 
 
 mod strings;
@@ -7,8 +9,10 @@ mod array;
 mod helpers;
 
 fn main() {
-    // select_random_problem();
-    let nums = vec![-2,1,-3,4,-1,2,1,-5,4];
-        max_sub_array(nums);
+    select_random_problem();
+    let test_str = String::from("loveleetcode");
+    first_uniq_char(test_str);
+
 }
+
 
